@@ -1,11 +1,21 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-html { box-sizing: border-box; }
 
-*, ::after, ::before { box-sizing: inherit; }
+html {
+    box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: inherit;
+}
 
 body {
     text-rendering: optimizeLegibility;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f5f5f5;
 }
+
 
 /*
  BARVY
@@ -24,4 +34,145 @@ body {
  border-radius: 30px;
 */
 
+
 /* ----- zde zacni psat vlastni css ----- */
+
+.vizual {
+    background: linear-gradient(#06d7c1, #50cc49);
+    border-radius: 10px 0 0 10px;
+    width: 335px;
+    height: 440px;
+    position: relative;
+    left: 150px;
+    top: 150px;
+    box-shadow: 2px 2px 7px #959595
+}
+
+.bota {
+    position: relative;
+    left: -65px;
+    top: -15px;
+    float: left;
+}
+
+.cenovka {
+    text-align: right;
+    ) font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    top: -90px;
+    padding-right: 20px;
+}
+
+.cena {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.zaruka {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.detaily {
+    border-radius: 0 10px 10px 0;
+    width: 335px;
+    height: 440px;
+    position: relative;
+    left: 485px;
+    top: -290px;
+    border: 1px solid #f5f5f5;
+    padding: 30px;
+    line-height: 1;
+    background-color: white;
+    box-shadow: 2px 2px 7px #959595;
+}
+
+.cenovka {
+    padding-left: 0;
+}
+
+.logo,
+.slogan {
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.slogan {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nazev {
+    COLOR: black;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.produkt {
+    color: #959595;
+    padding-bottom: 30px;
+    margin: 0;
+    font-size: 14px;
+}
+
+.popis {
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #06d7c1;
+    line-height: 1.5;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.parametr {
+    COLOR: black;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-bottom: -50px;
+    margin: 0;
+}
+
+.vybrana {
+    color: #f15f42;
+    border: 1px solid #f15f42;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.tlacitko {
+    background-color: #f15f42;
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    padding: 13px 30px 13px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+}
+
+.velikosti li {
+    display: inline-block;
+    padding-bottom: 15px;
+    padding: 15px;
+    text-align: center;
+    padding: 0 8px;
+    font-size: 14px;
+    padding: 9px;
+}
+
+.velikosti {
+    margin: 0;
+    padding: 15px;
+}
